@@ -71,7 +71,7 @@ unsigned long random_xid(void)
 
 
 /* initialize a packet with the proper defaults */
-static void init_packet(struct dhcpMessage *packet, char type)
+static void init_packet(struct dhcpMessage *packet, dhcpMessageType type)
 {
 	struct vendor  {
 		char vendor, length;

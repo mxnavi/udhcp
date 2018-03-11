@@ -20,7 +20,7 @@
 #include "options.h"
 
 
-void init_header(struct dhcpMessage *packet, char type)
+void init_header(struct dhcpMessage *packet, dhcpMessageType type)
 {
 	memset(packet, 0, sizeof(struct dhcpMessage));
 	switch (type) {
